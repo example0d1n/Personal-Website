@@ -1,10 +1,32 @@
 body {
-    background-color: antiquewhite;
+    background-color: #ffc6ce;
 }
 h1 {
     text-align: center;
+    color: white;
+    font-family:cursive;
 }
-.Home {
-    text-align: right;
+ul {
+    list-style-type: none;
+    font-family: cursive;
+}
+hr {
+    color: white;
+}
+.horizontal-list{
+    display: flex;
+    float: right;
+    padding: 0px;
+    margin: 0px;
+    gap: 50px;
+    cursor: pointer;
+}
+.horizontal-list li a {
+  text-decoration: none; /* Removes underlines from links */
+  color: white; 
+ 
+}
+.horizontal-list li a: hover{
+    color: black;
 
 }
