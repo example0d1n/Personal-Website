@@ -1,6 +1,27 @@
 body {
-    background-color: #ffc6ce;
+    margin: 0px;
+    padding: 0px;
+    background-image: url(image/cinnamonroll.png);
+    background-position: bottom;
+    background-attachment: fixed;
+    background-size: cover;
 }
+.wrapper-text{
+    color:purple;
+}
+.wrapper{
+    top-margin: 0px;
+    background-color: #f8afee;
+    margin: 0px;
+    padding: 0px;
+    
+    
+}
+img{
+    height:100%;
+    width:100%;
+}
+
 h1 {
     text-align: center;
     color: white;
@@ -29,4 +50,28 @@ hr {
 .horizontal-list li a:hover {
     color: black;
 
+}
+.btn{
+     /* Fallback background color for older browsers */
+  background-color: #f8afee; 
+  
+  /* The gradient effect */
+  background: linear-gradient(to right, #fbcfff, #ffffff);
+  
+  /* Other styling properties */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px; /* Adjust border-radius as needed */
+}
+
+.btn:hover{
+    background-position: right; /* Example hover effect, requires background-size change */
+  opacity: 0.8;
 }
