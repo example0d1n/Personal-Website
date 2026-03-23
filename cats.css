@@ -1,0 +1,96 @@
+h1 { /*  */
+    text-align: center;
+    color: white;
+    font-family:cursive;
+}
+ul { /* removes bullet points */
+    list-style-type: none;
+    font-family: cursive;
+}
+.horizontal-list{
+    display: flex;
+    float: right;
+    padding: 0px;
+    margin: 0px;
+    gap: 50px;
+    cursor: pointer;
+}
+.horizontal-list li a {
+  text-decoration: none; /* Removes underlines from links */
+  color: white; 
+ 
+}
+.horizontal-list li a:hover {
+    color: black;
+
+}
+.btn{
+     /* Fallback background color for older browsers */
+  background-color: #46026d; 
+  
+  /* The gradient effect */
+  background: linear-gradient(to right, #5f0168, #020a85);
+  
+  /* Other styling properties */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px; /* Adjust border-radius as needed */
+}
+
+.btn:hover{
+    background-position: right; /* Example hover effect, requires background-size change */
+  opacity: 0.8;
+}
+/* background image*/
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(image/wallpaperflare.com_wallpaper.jpg);
+    background-position: bottom;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+
+#box-alignment{
+
+}
+/* box-1 */
+#box-1{
+    background-color: #020a85;
+    color:white;
+    text-align: center;
+    align-items: center;
+    max-width: 450px;
+    max-height: 550px;
+    border-color: gray;
+    border-radius: 20px;
+    
+}
+.milo-image{
+    height: 200px;
+    width: 200px;
+}
+/* box 2*/
+#box-2{
+    background-color: #020a85;
+    color:white;
+    text-align: center;
+    align-items: center;
+    max-width: 450px;
+    max-height: 550px;
+    border-color: gray;
+    border-radius: 20px;
+}
+.duke-image{
+    height: 200px;
+    width: 200px;
+}
