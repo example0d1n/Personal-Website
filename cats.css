@@ -16,6 +16,7 @@ h3{
     border-radius: 10px;
     padding: 30px 40px;
     
+    transform: translateY(-510px);
 }
 ul { /* removes bullet points */
     list-style-type: none;
@@ -33,6 +34,9 @@ ul { /* removes bullet points */
     margin: 0px;
     gap: 50px;
     cursor: pointer;
+
+    
+    
 }
 
 .link{
@@ -40,6 +44,10 @@ ul { /* removes bullet points */
     background: linear-gradient(to right, #5f0168, #020a85);
     border: none;
     border-radius: 10px;
+
+    transform: translateY(-510px);
+    
+    
 }
 .horizontal-list{
     display: flex;
@@ -54,33 +62,43 @@ ul { /* removes bullet points */
   color: white; 
  
 }
-.horizontal-list li a:hover {
-    color: black;
-
-}
 .btn{
      /* Fallback background color for older browsers */
   background-color: #46026d; 
   
   /* The gradient effect */
-  background: linear-gradient(to right, #5f0168, #020a85);
   
   /* Other styling properties */
   border: none;
   color: white;
-  padding: 15px 32px;
+  padding: 1em 2em;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
-  border-radius: 8px; /* Adjust border-radius as needed */
+  border-radius: 1000px; /* Adjust border-radius as needed */
+  position: relative;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn::after{
+    content: '';
+    position: absolute;
+    height: 107%;
+    width: 102%;
+    border-radius: 1000px;
+    background-image: linear-gradient(to bottom right, red, blue);
+    z-index: -1;
 }
 
 .btn:hover{
-    background-position: right; /* Example hover effect, requires background-size change */
-  opacity: 0.8;
+    z-index: 0;
+    box-shadow: 40px 0 100px red, 
+    -40px 0 100px blue;
 }
 /* background image*/
 body {
@@ -98,7 +116,7 @@ body {
     display: flex; /* Activates flexbox layout */
     justify-content: center; /* Centers items horizontally along the main axis */
     align-items: center; /* Centers items vertically along the cross axis */
-    gap: 20px; /* Adds a 20px space between the boxes */
+    gap: 70px; /* Adds a 20px space between the boxes */
     height: 100vh; /* Makes the container take the full viewport height to center on the page */
     /* Add a border/background to the container to visualize the centering */
     border: none; 
@@ -111,16 +129,31 @@ body {
     padding: 15px;
     text-align: center;
     align-items: center;
-    max-width: 450px;
+    max-width: 500px;
     max-height: 550px;
     height: 100vh;
-    border-color: gray;
     border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
     
 }
+#box-1::after, #box-1::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: conic-gradient(red, orange, yellow, green, blue, purple,red);
+    z-index: -1;
+    padding: 3px;
+    border-radius: 20px;
+}
+#box-1::before{
+    filter: blur(1.5rem);
+
+}
+
 .milo-image{
     height: 200px;
     width: 200px;
@@ -132,15 +165,35 @@ body {
     padding: 15px;
     text-align: center;
     align-items: center;
-    max-width: 450px;
+    max-width: 500px;
     max-height: 550px;
     height: 100vh;
-    border-color: gray;
     border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
+#box-2::after, #box-2::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: conic-gradient(red, orange, yellow, green, blue, purple,red);
+    z-index: -1;
+    padding: 3px;
+    border-radius: 20px;
+}
+#box-2::before{
+    filter: blur(1.5rem);
+
+}
+
+
+
+
+
+
 .duke-image{
     height: 200px;
     width: 200px;
