@@ -28,7 +28,7 @@ ul { /* removes bullet points */
   /* Other styling properties */
   border: none;
   color: white;
-  padding: 1em 2em;
+  padding: 0.5em 0.9em;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -61,7 +61,7 @@ ul { /* removes bullet points */
 body {
     margin: 0;
     padding: 0;
-    background-image: url(image/wallpaperflare.com_wallpaper.jpg);
+    background-color: black;
     background-position: bottom;
     background-attachment: fixed;
     background-size: cover;
@@ -71,49 +71,50 @@ img{
     width: 250px;
     border-radius: 10px;
 }
-#grid{
-    display: grid;
-    grid-template-columns: 450px 450px;
-    grid-auto-rows: 1fr;
-    overflow: hidden;
-    gap: 1em;
-    grid-template-areas: 
-    "box-1 box-3 box-4"
-    "box-1 box-2 box-2";
+.Hunger-Games-Emblem{
+   display:block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 500px
 }
-.elements{
-    padding: 2em;
-    background: rgb(0, 0, 0);
-    text-align: center;
-    border-radius: 50px;
-    font-size: medium;
+.element{
     color: white;
-    position:relative;
+    font-family: Helvetica, sans-serif, Arial,;
 }
-.elements::after, .elements::before{
+.grid-container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 300px 300px 300px;
+    gap: 1em;
+
+    justify-content: center;
+}
+.item{
+    padding: 2em;
+    background-color: rgb(22, 22, 22);
+    color: white;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    position: relative;
+
+    align-items: center;
+}
+.item::after, .item::before{
     content: '';
-    position:absolute;
-    height: 101%;
-    width:102%;
-    background-image: conic-gradient(red, orange, yellow, green, blue, purple, red);
-    top:50%;
+    position: absolute;
+    height:100%;
+    width:100%;
+    background-image:conic-gradient(red, orange, yellow, gold, goldenrod, red);
+    top: 50%;
     left:50%;
     translate: -50% -50%;
     z-index: -1;
-    padding: 3px;
-    border-radius: 50px;
-
+    padding: 10px;
+    border-radius: 8px;
 }
-.elements::before{
+.item::before{
     filter: blur(1.5rem);
     opacity: 0.5;
 }
-
-.GitHublogo{
-    width: 650px;
-}
-
-
-
-
-
