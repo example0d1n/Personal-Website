@@ -59,6 +59,7 @@ ul { /* removes bullet points */
 }
 
 body {
+    height: 100vh;
     margin: 0;
     padding: 0;
     background-color: black;
@@ -75,20 +76,15 @@ img{
    display:block;
    margin-left: auto;
    margin-right: auto;
-   width: 500px
+   width: 800px;
+   height: 600px;
 }
 .element{
     color: white;
     font-family: Helvetica, sans-serif, Arial,;
 }
 .grid-container{
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 300px 300px 300px;
-    grid-template-rows: 300px 300px 300px;
-    gap: 1em;
-
-    justify-content: center;
+    gap: 2em;
 }
 .item{
     padding: 2em;
@@ -98,6 +94,7 @@ img{
     border-radius: 8px;
     font-size: 1.5rem;
     position: relative;
+    gap: 1em;
 
     align-items: center;
    
